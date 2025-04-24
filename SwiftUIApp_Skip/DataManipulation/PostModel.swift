@@ -63,9 +63,7 @@ struct PostModel{
             && lhs.title == rhs.title
             && lhs.mainText == rhs.mainText
             && lhs.image == rhs.image
-            && lhs.createdUTCOwnPost == rhs.createdUTCOwnPost
             && lhs.domain == rhs.domain
-            && lhs.createdUTC == rhs.createdUTC
             && lhs.imageUrl == rhs.imageUrl
             && lhs.after == rhs.after
             && lhs.url == rhs.url
