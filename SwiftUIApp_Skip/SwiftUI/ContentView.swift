@@ -84,7 +84,6 @@ struct ContentView: View {
                 LazyVStack{
                     ForEach(posts){ post in
                         PostCardView(post: post)
-                        
                     }
                 }
             }
@@ -94,6 +93,7 @@ struct ContentView: View {
     
     @ViewBuilder
     private func createPost () -> some View{
+        ScrollView{
             Spacer().frame(height: 50)
             
             Text("Create your post!")
@@ -116,6 +116,7 @@ struct ContentView: View {
             postButton()
             
             Spacer()
+        }
         
     }
     
